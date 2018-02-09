@@ -9,7 +9,6 @@
       <p class="text-box__second-text">
         {{secondMessage}}
       </p>
-      <div>{{testing}}</div>
     </div>
     <div class="circle"></div>
   </div>
@@ -33,8 +32,9 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .container {
-    background-color: lightseagreen;
+    background-color: grey;
     padding: 2rem 0 2rem 0;
+    margin:1rem;
   }
 
   .headline {

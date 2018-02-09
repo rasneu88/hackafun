@@ -22,11 +22,11 @@ export default {
   },
   data () {
     return {
-      title: 'container title :)',
+      title: 'HackaFUN alla vue',
       sections: [
         {
           template: 'twoHalves'
-        },  
+        },
         {
           template: 'oneWhole'
         },
@@ -35,7 +35,7 @@ export default {
         },
         {
           template: 'oneWhole'
-        }                                          
+        }
       ]
     }
   }
