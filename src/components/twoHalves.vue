@@ -9,6 +9,7 @@
         <img :src="img" alt="">
       </div>    
     </div>
+    <h2>{{type}}</h2>
   </div>
 </template>
 
@@ -16,6 +17,7 @@
 
 export default {
   name: 'twoHalves',
+  props: ['type'],
   data () {
     return {
       title: 'Two halves title',

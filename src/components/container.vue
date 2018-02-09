@@ -5,7 +5,7 @@
     <a href class="add-new-section">+</a>
 
     <div v-for="section in sections" :key="section.id">
-      <two-halves/>
+      <component :is="section.template"/>
     </div>
 
   </div>
@@ -13,38 +13,28 @@
 
 <script>
 import twoHalves from './twoHalves'
+import oneWhole from './oneWhole'
 
 export default {
   name: 'container',
   components: {
-    twoHalves
+    twoHalves,
+    oneWhole
   },
   data () {
     return {
       title: 'container title :)',
       sections: [
         {
-          title: 'title for section 1',
-          text: 'text for section 1',
-          img: 'static/soup.jpg',
           template: 'twoHalves'
         },  
         {
-          title: 'title for section 2',
-          text: 'text for section 2',
-          img: 'static/soup.jpg',
           template: 'oneWhole'
         },
         {
-          title: 'title for section 3',
-          text: 'text for section 3',
-          img: 'static/soup.jpg',
-          template: 'twohalves'
+          template: 'twoHalves'
         },
         {
-          title: 'title for section 4',
-          text: 'text for section 4',
-          img: 'static/soup.jpg',
           template: 'oneWhole'
         }                                          
       ]
