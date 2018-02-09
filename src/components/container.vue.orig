@@ -1,5 +1,8 @@
 <template>
   <div class="hello">
+<<<<<<< HEAD
+    <h1>{{ msg }}</h1>
+=======
     <h1>{{ title }}</h1>
 
     <a href class="add-new-section">+</a>
@@ -7,6 +10,8 @@
     <div v-for="section in sections" :key="section.id">
       <component :is="section.template"/>
     </div>
+>>>>>>> 6904a90901a9336cd0c8b26256713b1782a861c6
+
   </div>
 </template>
 
